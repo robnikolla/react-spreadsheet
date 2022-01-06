@@ -1,0 +1,82 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 15px;
+}
+.idinp {
+  width: 100%;
+  font-size: 20px;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  border-collapse:collapse;
+}
+.addinp {
+  font-size: 15px;
+  padding: 10px;
+  margin-right: 10px;
+  border-collapse:collapse;
+}
+.addbtn {
+  font-size: 18px;
+  border: none;
+  background-color: #266150;
+  padding: 10px;
+  color: white;
+}
+.delbtn {
+  background-color: #932432;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  align-content: center;
+}
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  
+}

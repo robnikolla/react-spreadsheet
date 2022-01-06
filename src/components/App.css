@@ -1,0 +1,27 @@
+body {
+  background-color: #282c34;
+}
+.mainview {
+  color: white;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 5% 10%;
+  border: 1px solid gray;
+  padding-bottom: 30px;
+}
+.table {
+  width: 90%;
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+}
+.table,
+th,
+td{
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.detelebtn {
+  background-color: aquamarine;
+}
